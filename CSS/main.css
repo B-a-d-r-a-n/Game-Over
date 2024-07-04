@@ -1,0 +1,132 @@
+body{
+  font-family: "comfortaa",cursive;
+  background-color: #272B30;
+  color: white ;
+}
+
+h1,h2,li a{
+  color: white !important;
+}
+.nav-link{
+  font-size: 12px !important;
+}
+.gamesDetails{
+  height: 100vh;
+  background-color: #27282B !important;
+}
+.card-footer{
+  background-color: #272B2F !important;
+}
+.card{
+  
+  filter: grayscale(0.7);
+  transition: all 0.5s;
+}
+.card p{
+  font-size: 15px !important
+}
+h5{
+  font-size: 14px !important
+}
+.card:hover{
+  filter: none;
+  transform: scale(1.05);
+}
+header img{
+  height: 30vh;
+  object-fit: cover;
+}
+nav img{
+  height: 40px !important
+}
+nav{
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.7) !important;
+  margin-top: -30px;
+  background-color: #3A497B;
+}
+h1{
+   color: rgb(23, 162, 184, 1);
+}
+.card-text{
+  color: #939598;
+}
+.nav-link.active{
+ color: #009ad8 !important;
+}
+
+.nav-link{
+  transition: all 0.2s !important;
+}
+.nav-link:hover{
+  color: #009ad8 !important;
+}
+
+.title-site{
+  font-size: 16px !important;
+  font-weight: 700 !important;
+}
+.loader {
+  animation: rotate 1s infinite;
+  height: 50px;
+  width: 50px !important;
+}
+
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+.loader:before {
+  animation: ball1 1s infinite;
+  background-color: #fff;
+  box-shadow: 30px 0 0 #254cce;
+  margin-bottom: 10px;
+}
+.loader:after {
+  animation: ball2 1s infinite;
+  background-color: #254cce;
+  box-shadow: 30px 0 0 #fff;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg) scale(0.8) }
+  50% { transform: rotate(360deg) scale(1.2) }
+  100% { transform: rotate(720deg) scale(0.8) }
+}
+
+@keyframes ball1 {
+  0% {
+    box-shadow: 30px 0 0 #254cce;
+  }
+  50% {
+    box-shadow: 0 0 0 #254cce;
+    margin-bottom: 0;
+    transform: translate(15px, 15px);
+  }
+  100% {
+    box-shadow: 30px 0 0 #254cce;
+    margin-bottom: 10px;
+  }
+}
+
+@keyframes ball2 {
+  0% {
+    box-shadow: 30px 0 0 #fff;
+  }
+  50% {
+    box-shadow: 0 0 0 #fff;
+    margin-top: -20px;
+    transform: translate(15px, 15px);
+  }
+  100% {
+    box-shadow: 30px 0 0 #fff;
+    margin-top: 0;
+  }
+}
+.loading{
+  z-index: 999999999;
+  background-color: rgba(0, 0, 0, 0.6);
+}

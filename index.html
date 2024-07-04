@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/main.css" />
+
+    <title>GameOver</title>
+  </head>
+  <body>
+    <section class="games">
+      <header>
+        <img src="images/wraper.png" class="w-100" alt="" />
+      </header>
+      <main class="d-flex flex-wrap justify-content-center">
+        <nav class="navbar navbar-expand-lg rounded-4 mb-5 sticky-top w-75">
+          <div class="container-md container-fluid px-4">
+            <a class="navbar-brand" href="#"
+              ><img
+                class="img-fluid d-inline-block align-middle"
+                src="Images/logo-sm.png"
+                alt="logo for the site"
+              />
+              <div class="d-inline-block mx-0 align-middle">
+                <h1 class="title-site my-0">GAME REVIEWS</h1>
+              </div></a
+            >
+            <button
+              class="navbar-toggler navbar-dark"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item px-1">
+                  <a
+                    class="nav-link active"
+                    role="button"
+                    aria-current="page"
+                    data-category="mmorpg"
+                    >MMORPG</a
+                  >
+                </li>
+                <li class="nav-item pe-1">
+                  <a class="nav-link" role="button" data-category="shooter"
+                    >SHOOTER</a
+                  >
+                </li>
+                <li class="nav-item pe-1">
+                  <a class="nav-link" role="button" data-category="sailing"
+                    >SAILING</a
+                  >
+                </li>
+                <li class="nav-item pe-1">
+                  <a class="nav-link" role="button" data-category="permadeath"
+                    >PERMADEATH</a
+                  >
+                </li>
+
+                <li class="nav-item pe-1">
+                  <a class="nav-link" role="button" data-category="superhero"
+                    >SUPERHERO</a
+                  >
+                </li>
+                <li class="nav-item pe-1">
+                  <a class="nav-link" role="button" data-category="pixel"
+                    >PIXEL</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <section class="gameCards d-flex justify-content-center container">
+          <div
+            class="row justify-content-center align-items-center g-3 gameBox row-cols-md-2 row-cols-lg-3 row-cols-xl-4 align-items-stretch row-cols-1"
+          >
+            <div
+              class="loading vh-100 vw-100 position-fixed top-0 start-0 d-none"
+            >
+              <span
+                class="loader position-fixed top-50 start-50 translate-middle"
+              ></span>
+            </div>
+          </div>
+        </section>
+      </main>
+    </section>
+    <section class="gamesDetails d-none">
+      <div class="container">
+        <div class="row gy-2 gameDetails">
+          <div
+            class="loading vh-100 vw-100 position-fixed top-0 start-0 d-none"
+          >
+            <span
+              class="loader position-fixed top-50 start-50 translate-middle"
+            ></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="loading vh-100 vw-100 position-fixed top-0 start-0 d-none">
+      <span
+        class="loader position-fixed top-50 start-50 translate-middle"
+      ></span>
+    </div>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+
+    <script src="JS/index.js" type="module"></script>
+  </body>
+</html>
